@@ -6,7 +6,6 @@ import 'package:scube_task/constants/assets_path.dart';
 import 'package:scube_task/constants/text_font_style.dart';
 
 class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
-
   final String title;
   const CustomAppBar({super.key, required this.title});
 
@@ -31,7 +30,7 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
 
           // Title Text
           Text(
-            "SCM",
+            title,
             style: TextFontStyle.textLine16C5E5E5EW600.copyWith(
               color: Color(0xFF04063E),
             ),

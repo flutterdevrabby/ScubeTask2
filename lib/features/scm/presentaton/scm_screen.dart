@@ -7,6 +7,7 @@ import 'package:scube_task/features/scm/widgets/data_gallery_view.dart';
 import 'package:scube_task/features/scm/widgets/data_view_widget.dart';
 import 'package:scube_task/providers/scm_provider.dart';
 import 'package:scube_task/routes/routes.dart';
+
 import '../../../common_widget/custom_app_bar.dart';
 import '../../../constants/text_font_style.dart';
 import '../widgets/center_tabbar/center_tabbar.dart';
@@ -19,7 +20,7 @@ class ScmScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: CustomAppBar(title: 'SCM'),
+      appBar: CustomAppBar(title: '2nd Page'),
       backgroundColor: Color(0xFFD9E4F1),
 
       body: SingleChildScrollView(
@@ -30,6 +31,19 @@ class ScmScreen extends StatelessWidget {
           builder: (context, provider, child) {
             return Column(
               children: [
+                SizedBox(height: 16.h),
+
+                GestureDetector(
+                  onTap: () {
+                    context.pop();
+                  },
+                  child: Image.asset(
+                    "assets/images/Frame 1000011061 (1).png",
+                    width: 1.sw,
+                    fit: BoxFit.cover,
+                  ),
+                ),
+
                 SizedBox(height: 16.h),
 
                 // Custom Tabbar
@@ -89,7 +103,7 @@ class ScmScreen extends StatelessWidget {
                             var data = provider.dataList[index];
                             return GestureDetector(
                               onTap: () {
-                                context.push(AppRoutes.scmDataScreen);
+                                //  context.push(AppRoutes.scmDataScreen);
                               },
                               child: DataViewWidget(data: data),
                             );

@@ -157,7 +157,7 @@ class _SignInScreenState extends State<SignInScreen> {
                       CustomButton(
                         buttonName: "Login",
                         onPressed: () {
-                          context.push(AppRoutes.scmScreen);
+                          context.push(AppRoutes.firstScreen);
                           // if (!_formKey.currentState!.validate()) {
                           //   return;
                           // } else {

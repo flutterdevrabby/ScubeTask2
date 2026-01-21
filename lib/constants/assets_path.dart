@@ -38,4 +38,7 @@ class AssetsIcon {
   static const String expandDownIcon = "assets/icons/expand_down.png";
   static const String expandUpIcon = "assets/icons/expand_up.png";
   static const String solarChartIcon = "assets/icons/solar_chart.png";
+
+
+  static const String secondButtonIcon = "assets/icons/second_button.png";
 }
